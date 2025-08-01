@@ -1,12 +1,42 @@
-# React + Vite
+## Project Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DriveCost is a modern fuel consumption calculator built with React and Tailwind CSS. It helps users calculate and visualize their vehicle's fuel efficiency and associated costs.
 
-Currently, two official plugins are available:
+### Features
+- Calculate fuel consumption (L/100km)
+- Convert to Miles Per Gallon (MPG)
+- Compute total fuel costs
+- Display cost per kilometer and per 100km
+- Interactive UI with real-time calculations
+- Responsive design with animated components
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Technical Stack
+- React 19
+- Tailwind CSS for styling
+- Vite for build tooling
+- Lucide React for icons
+- Custom hooks for business logic
 
-## Expanding the ESLint configuration
+### How It Works
+1. Users input three values:
+   - Distance traveled (kilometers)
+   - Fuel used (liters)
+   - Fuel price per liter
+2. The application calculates:
+   - Fuel consumption rate (L/100km)
+   - Fuel efficiency (MPG)
+   - Total cost
+   - Cost per kilometer
+   - Cost per 100km
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Development
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+```
